@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheetal City Center - Sheetal Real Estate</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-image: url('finloans-logo.jpg');
+            background-size: contain;
+            background-position: top;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 10px;
+            position: relative;
+        }
+        .logo {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            width: 2cm;
+            height: 2cm;
+        }
+        h1, h2, h3 {
+            text-align: center;
+        }
+        .project-details {
+            font-weight: bold;
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+        label, input, select, button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        .thank-you-message, .password-section, .restricted, .pdf-links {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .pdf-links a {
+            display: block;
+            margin: 10px 0;
+            padding: 12px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+        }
+        .unrestricted a {
+            background-color: #28a745; /* Green for unrestricted documents */
+            color: white;
+        }
+        .restricted a {
+            background-color: #dc3545; /* Red for restricted documents */
+            color: white;
+        }
+        .letterhead {
+            font-family: 'Times New Roman', Times, serif;
+            border: 2px solid #000;
+            padding: 20px;
+            margin-top: 20px;
+            background-color: #f7f7f7;
+        }
+        .contact-info {
+            margin-top: 30px;
+            text-align: center;
+            font-size: 1.2em;
+            color: #FF0000;
+        }
+        .contact-info a {
+            color: #FF0000;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- FinLoans Logo -->
+        <img src="finloans-logo.jpg" alt="FinLoans Logo" class="logo">
+
+        <!-- Project Details in Bold -->
+        <div class="project-details">
+            <p>Builder Name: M/S Sheetal Real Estate Pvt.Ltd.</p>
+            <p>Project Name: Sheetal City Center</p>
+            <p>Promoter Name: Sunil Agarwal</p>
+            <p>Construction:Mixed Project.[2B+G+12] multi storied commercial-cum-Residential Building</p>
+            <p>No. of Residential Units: 100</p>
+            <p>No. of Commercial Units: 86</p>
+            <p>Site: Anugul, Odisha</p>
+        </div>
+
+      <!-- Borrower Contact Form -->
+        <div class="form-section">
+            <h2 class="red-bold">Apply for the Best Housing Loan Deals with FinLoans</h2>
+            <p class="important-message">To see the important documents of the project, like the building plan, site plan, layout plan, ROR, EC, kindly fill in the details and submit the form:</p>
+            <form id="borrower-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone:</label>
+                <input type="text" id="phone" name="phone" required>
+
+                <label for="loan-amount">Home Loan Amount Required (INR):</label>
+                <input type="number" id="loan-amount" name="loanAmount" required>
+
+                <label for="bank">Preferred Bank:</label>
+                <input type="text" id="bank" name="bank" required>
+
+                <button type="submit">Submit Application</button>
+
+                <!-- Thank You Section -->
+                <div class="thank-you-message letterhead" id="thank-you-message" style="display: none;">
+                    <h1>FinLoans Services Pvt Ltd</h1>
+                    <p>A Brand of FinGroup Services Pvt Ltd</p>
+                    <p>Thank you for connecting with FinLoans. A mail has been sent to your email address with the password to access restricted documents.</p>
+                    <p>Best Regards,<br> Team FinLoans</p>
+                </div>
+
+                <!-- Password Prompt for Restricted PDFs -->
+                <div class="password-section" id="password-section" style="display: none;">
+                    <label for="password">Enter Password to Access Restricted PDFs:</label>
+                    <input type="password" id="password" placeholder="Enter password">
+                    <button id="check-password">Submit Password</button>
+                </div>
+
+            </form>
+        </div>
+
+        <!-- Unrestricted PDFs Section (Green Color) -->
+        <div class="pdf-section unrestricted">
+            <h2>Unrestricted Documents</h2>
+            <div class="pdf-links">
+                <a href="promoterdetail.pdf" target="_blank">Promoter Detail</a>
+                <a href="ror1.pdf" target="_blank">ROR1</a>
+                <a href="ror2.pdf" target="_blank">ROR2</a>
+                <a href="ror3.pdf" target="_blank">ROR3</a>
+                <a href="ror4.pdf" target="_blank">ROR4</a>   
+                <a href="ror5.pdf" target="_blank">ROR5</a>
+                <a href="ror6.pdf" target="_blank">ROR6</a>
+                <a href="ror7.pdf" target="_blank">ROR7</a>
+                <a href="ror8.pdf" target="_blank">ROR8</a>
+                <a href="ror9.pdf" target="_blank">ROR9</a>
+                <a href="ror10.pdf" target="_blank">ROR10</a>
+
+            </div>
+        </div>
+
+        <!-- Restricted PDFs Section (Red Color) -->
+        <div class="restricted pdf-links" id="restricted-content" style="display: none;">
+            <h3>Restricted Documents</h3>
+             <a href="planapproval.pdf" target="_blank">Plan Approval</a>
+             <a href="locationmap.pdf" target="_blank">Location Map</a>
+             <a href="layoutplan.pdf" target="_blank">Layout Plan</a>
+             <a href="siteplan.pdf" target="_blank">Site Plan</a>
+             <a href="sitedevelopment.pdf" target="_blank">Site Development</a>
+             <a href="saledeedformat.pdf" target="_blank">Sale Deed Format</a>
+             <a href="allotmentletterformat.pdf" target="_blank">Allotment Letter Format</a>
+             <a href="adoptagreementforsaleformat.pdf" target="_blank">Adopt Agreement for Sale Format</a>
+
+        </div>
+
+        <!-- Contact Information -->
+        <div class="contact-info">
+            <p>FinLoans Services Pvt Ltd, a Brand of FinGroup Services Pvt Ltd<br>
+            Mobile: 9827603070 | Email: <a href="mailto:support@finloans.in">support@finloans.in</a><br>
+            Website: <a href="https://www.finloans.in">www.finloans.in</a></p>
+        </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="form-handler.js"></script>
+
+</body>
+</html>
+
+
+
+
